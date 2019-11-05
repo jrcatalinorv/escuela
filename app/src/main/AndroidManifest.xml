@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.com.universidadanrdoidjr">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".VistaEstudiante"
+                    android:parentActivityName=".ListaEstudiantes"
+                    android:label="Perfil Estudiante"
+            ></activity>
+        <activity android:name=".FormularioMateria" android:label="Formulario Materia"></activity>
+        <activity android:name=".FormualrioCarrera" android:label="Formulario Carrera" />
+        <activity android:name=".ListaMaterias" android:label="Materias" />
+        <activity android:name=".ListaCarreras" android:label="Carreras" />
+        <activity android:name=".FormularioEstudiante" android:label="Formulario Estudiante"  />
+        <activity android:name=".ListaEstudiantes" android:parentActivityName=".MainActivity" android:label="Estudiantes" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
